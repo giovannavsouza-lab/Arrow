@@ -1,14 +1,35 @@
-//1.1 Converta para arrow function.//
+/*O map passa por cada item de um array e devolve um array novo, do mesmo tamanho, com cada item transformado.
 
-/*function saudacao(nome) {
-  return "Olá, " + nome;
-}
-Esperado: saudacao("Ana") mostra "Olá, Ana".
+3.1 Use map para dobrar cada número.
 
-1.2 Crie a arrow function soma, que recebe dois números e devolve a soma.
+const numeros = [1, 2, 3, 4];
+Esperado: [2, 4, 6, 8].
 
-Esperado: soma(2, 3) mostra 5.
+3.2 Use map para colocar todos os nomes em letra maiúscula. Dica: texto.toUpperCase().
 
-1.3 Crie a arrow function comDesconto, que recebe um preço e devolve o preço com 10% de desconto. Escreva em uma linha só, sem chaves e sem return.
-s
-Esperado: comDesconto(100) mostra 90.*/
+const nomes = ["ana", "bruno", "carla"];
+Esperado: ["ANA", "BRUNO", "CARLA"].
+
+3.3 Use map para criar uma lista só com os nomes dos produtos.
+
+const produtos = [
+  { id: 1, nome: "Caderno", preco: 15 },
+  { id: 2, nome: "Caneta", preco: 3 },
+  { id: 3, nome: "Mochila", preco: 120 },
+];
+Esperado: ["Caderno", "Caneta", "Mochila"].
+
+ */
+
+const numeros = [1, 2, 3, 4];
+const numerosDobrados = numeros.map((numero) => numero * 2);
+
+const nomes = ["ana", "bruno", "carla"];
+const nomesMaiusculos = nomes.map((nome) => nome.toUpperCase());
+
+const produtos = [
+    { id: 1, nome: "Caderno", preco: 15 },
+    { id: 2, nome: "Caneta", preco: 3 },
+    { id: 3, nome: "Mochila", preco: 120 },
+    ];
+    const nomesProdutos = produtos.map((produto) => produto.nome);
