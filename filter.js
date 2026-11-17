@@ -14,3 +14,10 @@ Esperado: [8, 9, 7].
 
 Esperado: ["Caderno", "Caneta"].*/
 
+const numeros = [1, 2, 3, 4, 5, 6];
+
+const pares = numeros.filter((n) => n % 2 === 0)
+console.log(pares);
+
+const notas = [5, 8, 6.5, 9, 7];
+console.log(notas.filter((n) => n >= 7))
